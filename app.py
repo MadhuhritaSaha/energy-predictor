@@ -7,8 +7,8 @@ from sklearn.preprocessing import MinMaxScaler
 
 # Load models
 lstm_model = load_model('lstm_model.h5')
-xgb_model = xgb.XGBRegressor()
-xgb_model.load_model('xgb_model.json')
+model_xgb = xgb.XGBRegressor()
+model_xgb.load_model('xgb_model.json')
 
 # Streamlit UI
 st.title("🔋 Energy Consumption Predictor")
